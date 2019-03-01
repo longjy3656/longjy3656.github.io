@@ -6,7 +6,7 @@ const ap = new APlayer({
       {
         name: "往后余生",
         artist: '王贰浪',
-        url: 'http://www.ytmp3.cn/down/52048.mp3',
+        url: 'http://www.ytmp3.cn/down/50547.mp3',
         cover: 'http://oeff2vktt.bkt.clouddn.com/image/84.jpg',
       },
       {
