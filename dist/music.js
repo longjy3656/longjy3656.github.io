@@ -1,7 +1,8 @@
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
-    fixed: true,
+    fixed: false,
     autoplay: true,
+    loop: 'all',
     audio: [
       {
         name: "往后余生",
