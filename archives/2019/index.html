@@ -215,18 +215,18 @@
     </div>
     <!-- Wrapper 外包 e-->
     <!-- Scripts -->
-		<audio oncanplay="toggleSound()" style="display:fixed;top:0;left:0;opacity:0.5;width:10%;" id="audio" loop="loop" preload="auto" controls="controls" autoplay="autoplay">
+		<audio style="display:fixed;top:0;left:0;opacity:0.5;width:10%;" id="audio" loop="loop" preload="auto" controls="controls" autoplay="autoplay">
     		<source type="audio/mpeg" src="/music/001.mp3">
     </audio>
     <script>
     		function toggleSound() {
             var music = document.getElementById("audio");//获取ID  
-            if (music.paused) { //判读是否播放
-								alert("haha");  
+            if (music.paused) { //判读是否播放  
                 music.paused = false;
                 music.play(); //没有就播放 
             }  
         }
+				setTimeout("toggleSound()", 5000);
     </script>
 </body>
 
