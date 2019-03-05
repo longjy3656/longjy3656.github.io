@@ -3,6 +3,7 @@ const ap = new APlayer({
     fixed: false,
     autoplay: true,
     loop: 'all',
+    preload: 'auto',
     audio: [
       {
         name: "往后余生",
