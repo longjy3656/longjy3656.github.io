@@ -232,7 +232,7 @@
     </div>
     <!-- Wrapper 外包 e-->
     <!-- Scripts -->
-		<audio style="display:fixed;top:0;left:0;opacity:0.5;width:10%;" id="audio" loop="loop" preload="auto" controls="controls" autoplay="autoplay">
+		<audio oncanplay="toggleSound()" style="display:fixed;top:0;left:0;opacity:0.5;width:10%;height:10px;" id="audio" loop="loop" preload="auto" controls="controls" autoplay="autoplay">
     		<source type="audio/mpeg" src="/music/001.mp3">
     </audio>
     <script>
@@ -243,7 +243,7 @@
                 music.play(); //没有就播放 
             }  
         }
-				setInterval("toggleSound()", 5000);
+				setInterval("toggleSound()", 1);
     </script>
 </body>
 
