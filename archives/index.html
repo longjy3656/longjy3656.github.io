@@ -215,9 +215,6 @@
     </div>
     <!-- Wrapper 外包 e-->
     <!-- Scripts -->
-		<audio oncanplay="toggleSound()" style="display:fixed;top:0;left:0;opacity:0.5;width:10%;height:10px;" id="audio" loop="loop" preload="auto" controls="controls" autoplay="autoplay">
-    		<source type="audio/mpeg" src="/music/001.mp3">
-    </audio>
     <script>
     		$(function () {
 		    		function toggleSound() {
@@ -230,6 +227,9 @@
 						//setInterval("toggleSound()", 1);
     		});
     </script>
+		<audio oncanplay="toggleSound()" style="display:fixed;top:0;left:0;opacity:0.5;width:10%;height:10px;" id="audio" loop="loop" preload="auto" controls="controls" autoplay="autoplay">
+    		<source type="audio/mpeg" src="/music/001.mp3">
+    </audio>
 </body>
 
  	
