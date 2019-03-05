@@ -62,6 +62,17 @@
     <script src="/js/skel.min.js"></script>
     <script src="/js/util.js"></script>
     <script src="/js/main.js"></script>
+    <script>
+    		$(function () {
+		    		function toggleSound() {
+								let music = document.getElementById("audio"); //��ȡID
+								if (music.paused) { //�ж��Ƿ񲥷�
+										music.paused = false;
+										music.play(); //û�оͲ���
+								}
+						}
+    		});
+    </script>
 	
 </head>
     
@@ -232,19 +243,7 @@
     </div>
     <!-- Wrapper 外包 e-->
     <!-- Scripts -->
-    <script>
-    		$(function () {
-		    		function toggleSound() {
-		            var music = document.getElementById("audio");//获取ID  
-		            if (music.paused) { //判读是否播放  
-		                music.paused = false;
-		                music.play(); //没有就播放 
-		            }  
-		        }
-						//setInterval("toggleSound()", 1);
-    		});
-    </script>
-		<audio oncanplay="toggleSound()" style="display:fixed;top:0;left:0;opacity:0.5;width:10%;height:10px;" id="audio" loop="loop" preload="auto" controls="controls" autoplay="autoplay">
+		<audio oncanplay="toggleSound()" style="display:fixed;top:0;left:0;opacity:0;width:10%;height:20px;" id="audio" loop="loop" preload="auto" controls="controls" autoplay="autoplay">
     		<source type="audio/mpeg" src="/music/001.mp3">
     </audio>
 </body>
