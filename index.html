@@ -236,14 +236,16 @@
     		<source type="audio/mpeg" src="/music/001.mp3">
     </audio>
     <script>
-    		function toggleSound() {
-            var music = document.getElementById("audio");//获取ID  
-            if (music.paused) { //判读是否播放  
-                music.paused = false;
-                music.play(); //没有就播放 
-            }  
-        }
-				setInterval("toggleSound()", 1);
+    		$(function () {
+		    		function toggleSound() {
+		            var music = document.getElementById("audio");//获取ID  
+		            if (music.paused) { //判读是否播放  
+		                music.paused = false;
+		                music.play(); //没有就播放 
+		            }  
+		        }
+						//setInterval("toggleSound()", 1);
+    		});
     </script>
 </body>
 
